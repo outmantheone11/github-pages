@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#3498db" /> <!-- اللون الأساسي للموقع -->
+  <title>متجر Kiddie </title>
+  <style>
+    /* تحديد المظهر أو skin للموقع */
+    .skin {
+      background-color: #f9f9f9;
+      color: #333;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #3498db;
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      background: #2980b9;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background: #1abc9c;
+    }
+
+    section {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .slider {
+      margin: 1rem auto;
+      max-width: 80%;
+      height: 200px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .slider img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .product {
+      display: inline-block;
+      margin: 1rem;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      width: 200px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: #fff;
+    }
+
+    .product img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .product:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    button {
+      background: #1abc9c;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #16a085;
+    }
+
+    footer {
+      background: #3498db;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+
+<body class="skin">
+  <!-- إضافة الكلاس skin هنا -->
+  <header>
+    <h1>مرحبًا بكم في متجر Kiddie</h1>
+  </header>
+
+  <section id="home">
+    <h2>اكتشف منتجات Kiddie المميزة!</h2>
+    <div class="slider" id="slider">
+      <img src="kiddie1.jpg" alt="منتج Kiddie 1" class="slide" style="transform: translateX(0);" />
+      <img src="kiddie2.jpg" alt="منتج Kiddie 2" class="slide" style="transform: translateX(100%);" />
+      <img src="kiddie3.jpg" alt="منتج Kiddie 3" class="slide" style="transform: translateX(200%);" />
+    </div>
+  </section>
+
+  <section id="login">
+    <h2>تسجيل الدخول</h2>
+    <form onsubmit="login(event)">
+      <label for="email">البريد الإلكتروني:</label>
+      <input type="email" id="email" name="email" required="required" />
+      <label for="password">كلمة المرور:</label>
+      <input type="password" id="password" name="password" required="required" />
+      <button type="submit">تسجيل الدخول</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>اتصل بنا</h2>
+    <form onsubmit="sendMessage(event)">
+      <label for="name">الاسم:</label>
+      <input type="text" id="name" name="name" required="required" />
+      <label for="message">الرسالة:</label>
+      <textarea id="message" name="message" required="required"></textarea>
+      <button type="submit">إرسال</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Kiddie. جميع الحقوق محفوظة.</p>
+  </footer>
+
+  <script>
+    // إضافة سكريبتات لتحديث الـ slider أو التفاعل مع السلة
+    function login(event) {
+      event.preventDefault();
+      alert("تم تسجيل الدخول بنجاح");
+    }
+
+    function sendMessage(event) {
+      event.preventDefault();
+      alert("تم إرسال الرسالة بنجاح");
+    }
+  </script>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#3498db" /> <!-- اللون الأساسي للموقع -->
+  <title>متجر Kiddie </title>
+  <style>
+    /* تحديد المظهر أو skin للموقع */
+    .skin {
+      background-color: #f9f9f9;
+      color: #333;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #3498db;
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      background: #2980b9;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background: #1abc9c;
+    }
+
+    section {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .slider {
+      margin: 1rem auto;
+      max-width: 80%;
+      height: 200px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .slider img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .product {
+      display: inline-block;
+      margin: 1rem;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      width: 200px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: #fff;
+    }
+
+    .product img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .product:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    button {
+      background: #1abc9c;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #16a085;
+    }
+
+    footer {
+      background: #3498db;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+
+<body class="skin">
+  <!-- إضافة الكلاس skin هنا -->
+  <header>
+    <h1>مرحبًا بكم في متجر Kiddie</h1>
+  </header>
+
+  <section id="home">
+    <h2>اكتشف منتجات Kiddie المميزة!</h2>
+    <div class="slider" id="slider">
+      <img src="kiddie1.jpg" alt="منتج Kiddie 1" class="slide" style="transform: translateX(0);" />
+      <img src="kiddie2.jpg" alt="منتج Kiddie 2" class="slide" style="transform: translateX(100%);" />
+      <img src="kiddie3.jpg" alt="منتج Kiddie 3" class="slide" style="transform: translateX(200%);" />
+    </div>
+  </section>
+
+  <section id="login">
+    <h2>تسجيل الدخول</h2>
+    <form onsubmit="login(event)">
+      <label for="email">البريد الإلكتروني:</label>
+      <input type="email" id="email" name="email" required="required" />
+      <label for="password">كلمة المرور:</label>
+      <input type="password" id="password" name="password" required="required" />
+      <button type="submit">تسجيل الدخول</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>اتصل بنا</h2>
+    <form onsubmit="sendMessage(event)">
+      <label for="name">الاسم:</label>
+      <input type="text" id="name" name="name" required="required" />
+      <label for="message">الرسالة:</label>
+      <textarea id="message" name="message" required="required"></textarea>
+      <button type="submit">إرسال</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Kiddie. جميع الحقوق محفوظة.</p>
+  </footer>
+
+  <script>
+    // إضافة سكريبتات لتحديث الـ slider أو التفاعل مع السلة
+    function login(event) {
+      event.preventDefault();
+      alert("تم تسجيل الدخول بنجاح");
+    }
+
+    function sendMessage(event) {
+      event.preventDefault();
+      alert("تم إرسال الرسالة بنجاح");
+    }
+  </script>
+</body>
+
+</html>
